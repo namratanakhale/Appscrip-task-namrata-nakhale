@@ -1,0 +1,40 @@
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  height: max-content;
+  width: 90%; /* Limit width for better readability */
+  margin: 0 auto; /* Center the section on the page */
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.heroTitle {
+  font-size: 3em;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 20px;
+  letter-spacing: 0.1em; /* Adjust as needed for the bold look */
+}
+
+.heroText {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+  max-width: 600px; /* Limit text width for readability */
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 10px;
+  }
+ 
+  .heroTitle {
+    font-size: 1.2rem !important;
+  }
+
+  .heroText {
+    font-size: 1em;
+  }
+} 

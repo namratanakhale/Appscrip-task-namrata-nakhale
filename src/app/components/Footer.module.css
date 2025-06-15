@@ -1,0 +1,233 @@
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 3rem 6rem 1rem 6rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+.flex_col{
+  display: flex;
+  flex-direction: column;
+}
+.justify_between{
+  justify-content: space-between;
+}
+.topSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.newsletterSection {
+  flex: 2;
+  min-width: 260px;
+}
+.newsletterSection h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.newsletterSection p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+.newsletterForm {
+  display: flex;
+  gap: 0.5rem;
+  width: 64%; 
+}
+.newsletterForm input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 0;
+  font-size: 1rem;
+}
+.newsletterForm button {
+  padding: 0.7rem 1.5rem;
+  background: none !important;
+  color: #837f7f;
+  border: 1px solid #837f7f;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.newsletterForm button:hover {
+  background: #eee;
+}
+
+.contactSection {
+  flex: 1;
+  min-width: 220px;
+}
+.contactSection h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.contactSection p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
+.flag {
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+}
+.currencyNote {
+  font-size: 0.8rem;
+  color: #bbb;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.linksSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.linksSection > div {
+  min-width: 180px;
+  flex: 1;
+}
+.linksSection h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+.linksSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.linksSection li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.linksSection li:hover {
+  color: #bbb;
+}
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.socialIcons img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+.socialIcons img:hover {
+  filter: brightness(0.7) invert(1);
+}
+.paymentIcons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.paymentIcons img {
+  height: 28px;
+  background: #fff;
+  border-radius: 4px;
+}
+.center_center_flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gap_point_5rem {
+  gap: 0.5rem;
+}
+.justify_start{
+  justify-content: flex-start !important;
+}
+.copyright {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .topSection, .linksSection {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .linksSection > div {
+    min-width: 120px;
+  }
+} 
+@media (max-width: 768px) {
+  .footer{
+    padding: 1rem !important;
+  }
+  .newsletterForm button{
+    padding: 0.5rem !important;
+  }
+  .currencyNote {
+    display: none !important;
+  }
+  .mobileSection {
+    border-bottom: 1px solid #ffff !important;
+  }
+  .divider{
+    border-top: 1px solid #ffff !important;
+  }
+  .margin_tb_2rem{
+    margin: 2rem 0rem !important
+  }
+}
+
+.mobileSection {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.mobileSectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.mobileSectionHeader h4 {
+  margin: 0;
+}
+
+.dropdownIcon {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.mobileSectionContent {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.mobileSectionContent li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.mobileSectionContent li:last-child {
+  border-bottom: none;
+}

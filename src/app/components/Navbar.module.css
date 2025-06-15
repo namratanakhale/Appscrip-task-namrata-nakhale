@@ -1,0 +1,34 @@
+.navbar {
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 1rem;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px; /* Adjust spacing between items */
+}
+
+.navItem a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.navItem a:hover {
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .navList {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+} 
